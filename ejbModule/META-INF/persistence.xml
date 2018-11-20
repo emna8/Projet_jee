@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Bibliotheque_projet">
+			<jta-data-source>java:jboss/datasources/biblioDS</jta-data-source>
+			<class>metier.enties.people.Adherent</class>
+			<class>metier.enties.people.Etudiant</class>
+			<class>metier.enties.people.Enseignant</class>
+			<class>metier.enties.people.Auteur</class>
+			<class>metier.enties.people.Compte</class>
+			<class>metier.enties.Livre</class>
+			<class>metier.enties.Oeuvre</class>
+			<class>metier.enties.Categorie</class>
+			<class>metier.enties.SupportPdf</class>
+			<class>metier.enties.SupportPapier</class>
+			<class>metier.enties.Emprunt</class>
+			<class>metier.enties.EmpruntPK</class>
+			<class>metier.enties.Reservation</class>
+			<class>metier.enties.people.JUST</class>
+			<properties>
+				<property name="hibernate.hbm2ddl.auto" value="update" />
+				<property name="hibernate.show_sql" value="true" />
+			</properties>
+	</persistence-unit>
+</persistence>
